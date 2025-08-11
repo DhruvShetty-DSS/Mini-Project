@@ -85,11 +85,16 @@
 
 .hero {
   position: relative;
+  height: 100vh;
   background: url('5A\ \ Protect.jpg') center/cover no-repeat;
-  height: 100vh; /* or fixed height like 600px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.overlay {
+
+.hero .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,24 +102,24 @@
   height: 100%;
   background: rgba(0,0,0,0.3);
   transition: background 0.7s ease-in;
+  z-index: 0;
 }
 
 .hero:hover .overlay {
-  background: rgba(0, 0, 0, 0.621);
+  background: rgba(0,0,0,0.4);
 }
+
 
 .Main_Title {
   position: relative;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 80px;
+  font-size: clamp(40px, 6vw, 80px); 
   font-weight: bolder;
   color: white;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
+  z-index: 1; 
   margin: 0;
+  padding: 0 15px;
 }
-  
   
   
   
@@ -221,4 +226,5 @@
     padding: 20px 0;
 
   }
+
 
