@@ -81,8 +81,9 @@
   
   
   
-  
-  .hero {
+
+
+.hero {
   position: relative;
   background: url('5A\ \ Protect.jpg') center/cover no-repeat;
   height: 100vh; /* or fixed height like 600px */
@@ -99,7 +100,7 @@
 }
 
 .hero:hover .overlay {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.621);
 }
 
 .Main_Title {
@@ -113,7 +114,6 @@
   transform: translateY(-50%);
   margin: 0;
 }
-
   
   
   
@@ -221,3 +221,4 @@
     padding: 20px 0;
 
   }
+
